@@ -1,0 +1,19 @@
+{
+  "name": "catfoldernew07262021",
+  "version": "1.0.0",
+  "description": "catShelter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CramerJ1470/sillyCatShelter.git"
+  },
+  "author": "John Cramer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CramerJ1470/sillyCatShelter/issues"
+  },
+  "homepage": "https://github.com/CramerJ1470/sillyCatShelter#readme"
+}
