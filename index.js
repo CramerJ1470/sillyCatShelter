@@ -1,4 +1,17 @@
-const http = request("http");
-const port = 3042;
+const http = require("http");
 
-http.createServer((req, res));
+const port = 3122;
+const handlers = require("./handlers");
+
+http.createServer((req, res) => {
+	for (let handler of handlers) {
+		if (!handler(req, res)) {
+			break;
+		}
+	}
+	//res.writeHead(200, {
+	//	"Content-Type": "text/plain",
+	//});
+	//res.write("Hello JS World!");
+	res.end();
+}).listen(port);
